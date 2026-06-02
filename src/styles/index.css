@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "./reset.css";
+
+body {
+    background-color: rgb(23, 24, 32);
+    color: white;
+}
+ 
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
