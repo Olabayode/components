@@ -2,11 +2,194 @@
 @import "./reset.css";
 
 body {
-    background-color: rgb(23, 24, 32);
-    color: white;
+    background-color: #FCEFEF;
+    color: #453939;
+    font-family: Arial, Helvetica, sans-serif;
 }
  
 .container {
     width: 80%;
     margin-inline: auto;
+}
+
+header {
+    min-height: 84px;
+    padding: 0 10%;
+    background-color: #3C493F;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    box-shadow: 0 4px 18px rgb(60 73 63 / 20%);
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+header nav {
+    flex: 1;
+}
+
+header .flex {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    color: #FCEFEF;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header a:hover,
+header a:focus-visible {
+    background-color: rgb(252 239 239 / 14%);
+    color: #fff;
+}
+
+header button,
+header .welcome {
+    min-height: 42px;
+    padding: 0 18px;
+    border: 1px solid #FCEFEF;
+    border-radius: 6px;
+    background-color: #FCEFEF;
+    color: #3C493F;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+header button:hover,
+header button:focus-visible,
+header .welcome:hover,
+header .welcome:focus-visible {
+    background-color: transparent;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.banner {
+    padding: 88px 10%;
+    text-align: center;
+    background-color: #FCEFEF;
+}
+
+.banner h1 {
+    max-width: 760px;
+    margin: 0 auto 16px;
+    color: #3C493F;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.banner h2 {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #5F5555;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.banner-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.banner button {
+    min-height: 46px;
+    padding: 0 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.banner .primary {
+    border: 1px solid #3C493F;
+    background-color: #3C493F;
+    color: #fff;
+}
+
+.banner .secondary {
+    border: 1px solid #3C493F;
+    background-color: transparent;
+    color: #3C493F;
+}
+
+.banner button:hover,
+.banner button:focus-visible {
+    transform: translateY(-1px);
+}
+
+.banner .primary:hover,
+.banner .primary:focus-visible {
+    background-color: #2F3932;
+}
+
+.banner .secondary:hover,
+.banner .secondary:focus-visible {
+    background-color: #3C493F;
+    color: #fff;
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 18px 6%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        text-align: center;
+    }
+
+    header h1 {
+        white-space: normal;
+    }
+
+    header .flex {
+        flex-wrap: wrap;
+    }
+
+    header button,
+    header .welcome {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 56px 6%;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .banner-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
