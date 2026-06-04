@@ -7,8 +7,8 @@ import city from "./assets/city.avif";
 import night from "./assets/night.avif";
 import travel from "./assets/travel.avif";
 
-let bannerHeader = "Welcome To The Big Bang";
-let bannerText = "Big Bang Theory Featuring A lot of Good Actors and Terrible Ones Too"
+let bannerHeader = "Welcome To The Biggest Luxury Agency";
+let bannerText = "Luxury Agency is the biggest agency that deals with sourcing for and trading luxurious items in Canada ranging from Cars, Houses, Views, Wears, Travel Destinations to Meals that can't be easily sourced for anywhere around the globe."
 
 const navLinks = [
     {index: 0, name: 'About', url: '#'},
@@ -24,10 +24,10 @@ const imageLinks = [
 ]
 
 const buttonText = [
-  {index: 0, text: 'Button 1', className: 'primary'},
-  {index: 1, text: 'Button 2', className: 'secondary'},
+  {index: 0, text: 'Learn More', className: 'primary'},
+  {index: 1, text: 'About', className: 'secondary'},
   {index: 2, text: 'Subscribe', className: 'subscribe'},
-  {index: 3, text: 'Button 4', className: 'welcome'},
+  {index: 3, text: 'Shop Luxe', className: 'welcome'},
 ]
 
 

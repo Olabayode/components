@@ -4,7 +4,7 @@ function Footer(props){
         <footer>
             <div className="footer-main">
                 <div className="footer-brand">
-                    <h2>Big Bang Theory</h2>
+                    <h2>Luxury Agency</h2>
                     <p>Stories, updates, and highlights from the cast and fans.</p>
                 </div>
 
@@ -17,7 +17,7 @@ function Footer(props){
 
                 <div className="footer-column">
                     <h3>Contact</h3>
-                    <p>hello@bigbang.com</p>
+                    <p>hello@luxagency.com</p>
                     <p>Winnipeg, Canada</p>
                     <p>Mon - Fri, 9am - 5pm</p>
                 </div>
@@ -29,7 +29,7 @@ function Footer(props){
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; 2026 Big Bang Theory. All rights reserved.</p>
+                <p>&copy; 2026 Luxury Agency. All rights reserved.</p>
             </div>
         </footer>
     );

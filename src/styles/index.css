@@ -7,9 +7,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html,
-body,
-#root {
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+html, body, #root {
     min-height: 100%;
 }
 
@@ -33,7 +35,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-    box-shadow: 0 4px 18px rgb(60 73 63 / 20%);
+    box-shadow: 0 4px 18px #3c493f33;
 }
 
 header h1 {
@@ -67,12 +69,11 @@ header a {
     border-radius: 6px;
     font-size: 30px;
     font-weight: 600;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-header a:hover,
-header a:focus-visible {
-    background-color: rgb(252 239 239 / 14%);
+header a:hover {
+    background-color: #332c2f;
     color: #fff;
 }
 
@@ -86,13 +87,11 @@ header .welcome {
     color: #3C493F;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 header button:hover,
-header button:focus-visible,
-header .welcome:hover,
-header .welcome:focus-visible {
+header .welcome:hover {
     background-color: transparent;
     color: #fff;
     transform: translateY(-1px);
@@ -108,15 +107,15 @@ header .welcome:focus-visible {
     max-width: 760px;
     margin: 0 auto 16px;
     color: #3C493F;
-    font-size: 44px;
+    font-size: 55px;
     font-weight: 700;
 }
 
 .banner h2 {
-    max-width: 680px;
+    max-width: 80%;
     margin: 0 auto;
     color: #5F5555;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -135,7 +134,7 @@ header .welcome:focus-visible {
     border-radius: 6px;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .banner .primary {
@@ -150,25 +149,31 @@ header .welcome:focus-visible {
     color: #3C493F;
 }
 
-.banner button:hover,
-.banner button:focus-visible {
+.banner button:hover {
     transform: translateY(-1px);
 }
 
-.banner .primary:hover,
-.banner .primary:focus-visible {
-    background-color: #2F3932;
+.banner .primary:hover {
+    background-color: #94ECBE;
+    color: #26312A;
 }
 
-.banner .secondary:hover,
-.banner .secondary:focus-visible {
-    background-color: #3C493F;
-    color: #fff;
+.banner .secondary:hover {
+    background-color: #94ECBE;
+    color: #000;
 }
 
 .gallery {
-    padding: 200px 10%;
+    padding: 48px 10% 200px;
     background-color: #E8F0EA;
+}
+
+.gallery h1 {
+    margin-bottom: 32px;
+    color: #3C493F;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .gallery-list {
@@ -190,7 +195,7 @@ header .welcome:focus-visible {
 .gallery-list img {
     display: block;
     width: 100%;
-    height: 580px;
+    height: 660px;
     object-fit: cover;
 }
 
@@ -272,13 +277,11 @@ footer .subscribe {
     color: #fff;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 footer button:hover,
-footer button:focus-visible,
-footer .subscribe:hover,
-footer .subscribe:focus-visible {
+footer .subscribe:hover {
     background-color: transparent;
     color: #3C493F;
 }
@@ -323,7 +326,11 @@ footer .subscribe:focus-visible {
     }
 
     .gallery {
-        padding: 120px 6%;
+        padding: 36px 6% 120px;
+    }
+
+    .gallery h1 {
+        font-size: 42px;
     }
 
     .gallery-list {
@@ -332,7 +339,7 @@ footer .subscribe:focus-visible {
     }
 
     .gallery-list img {
-        height: 360px;
+        height: 420px;
     }
 
     footer {
