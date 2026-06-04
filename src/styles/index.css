@@ -87,7 +87,7 @@ header .welcome:focus-visible {
 }
 
 .banner {
-    padding: 88px 10%;
+    padding: 128px 10%;
     text-align: center;
     background-color: #FCEFEF;
 }
@@ -154,6 +154,34 @@ header .welcome:focus-visible {
     color: #fff;
 }
 
+.gallery {
+    padding: 160px 10%;
+    background-color: #E8F0EA;
+}
+
+.gallery-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-list li {
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px #3c493f29;
+}
+
+.gallery-list img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
 @media (max-width: 720px) {
     header {
         padding: 18px 6%;
@@ -177,7 +205,7 @@ header .welcome:focus-visible {
     }
 
     .banner {
-        padding: 56px 6%;
+        padding: 80px 6%;
     }
 
     .banner h1 {
@@ -191,5 +219,18 @@ header .welcome:focus-visible {
     .banner-actions {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .gallery {
+        padding: 96px 6%;
+    }
+
+    .gallery-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .gallery-list img {
+        height: 300px;
     }
 }

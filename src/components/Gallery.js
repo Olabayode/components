@@ -1,14 +1,14 @@
 function Gallery (props){
     return (
-        <div>
-            <ul>
+        <section className="gallery">
+            <ul className="gallery-list">
                 {props.imageLinks.map(image => (
                     <li key={image.index}>
                         <img src={image.url} alt={image.name}/>
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     );
 }
 
