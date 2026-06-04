@@ -1,10 +1,37 @@
 import Button from "./Button";
 function Footer(props){
     return(
-        <>
-            <h2>CopyRight</h2>
-            <Button className={props.buttonText[2].className} buttonText={props.buttonText[2].text}/>
-        </>
+        <footer>
+            <div className="footer-main">
+                <div className="footer-brand">
+                    <h2>Big Bang Theory</h2>
+                    <p>Stories, updates, and highlights from the cast and fans.</p>
+                </div>
+
+                <div className="footer-column">
+                    <h3>Explore</h3>
+                    <p>About</p>
+                    <p>Blogs</p>
+                    <p>Team</p>
+                </div>
+
+                <div className="footer-column">
+                    <h3>Contact</h3>
+                    <p>hello@bigbang.com</p>
+                    <p>Winnipeg, Canada</p>
+                    <p>Mon - Fri, 9am - 5pm</p>
+                </div>
+
+                <div className="footer-subscribe">
+                    <p>Subscribe to our newsletter</p>
+                    <Button className={props.buttonText[2].className} buttonText={props.buttonText[2].text}/>
+                </div>
+            </div>
+
+            <div className="footer-bottom">
+                <p>&copy; 2026 Big Bang Theory. All rights reserved.</p>
+            </div>
+        </footer>
     );
 }
 

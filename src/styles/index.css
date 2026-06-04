@@ -6,6 +6,18 @@ body {
     color: #453939;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
  
 .container {
     width: 80%;
@@ -13,7 +25,7 @@ body {
 }
 
 header {
-    min-height: 84px;
+    min-height: 104px;
     padding: 0 10%;
     background-color: #3C493F;
     color: #fff;
@@ -155,7 +167,7 @@ header .welcome:focus-visible {
 }
 
 .gallery {
-    padding: 160px 10%;
+    padding: 200px 10%;
     background-color: #E8F0EA;
 }
 
@@ -178,8 +190,97 @@ header .welcome:focus-visible {
 .gallery-list img {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 580px;
     object-fit: cover;
+}
+
+footer {
+    margin-top: auto;
+    padding: 48px 10% 24px;
+    background-color: #AAACB0;
+    color: #26312A;
+}
+
+.footer-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 36px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #8D9094;
+}
+
+.footer-brand {
+    max-width: 340px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #26312A;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+    color: #26312A;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer p {
+    max-width: 520px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer-subscribe p {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    max-width: none;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+footer button,
+footer .subscribe {
+    min-height: 44px;
+    padding: 0 22px;
+    border: 1px solid #3C493F;
+    border-radius: 6px;
+    background-color: #3C493F;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+footer button:hover,
+footer button:focus-visible,
+footer .subscribe:hover,
+footer .subscribe:focus-visible {
+    background-color: transparent;
+    color: #3C493F;
 }
 
 @media (max-width: 720px) {
@@ -222,7 +323,7 @@ header .welcome:focus-visible {
     }
 
     .gallery {
-        padding: 96px 6%;
+        padding: 120px 6%;
     }
 
     .gallery-list {
@@ -231,6 +332,31 @@ header .welcome:focus-visible {
     }
 
     .gallery-list img {
-        height: 300px;
+        height: 360px;
+    }
+
+    footer {
+        padding: 32px 6%;
+        text-align: center;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    footer p {
+        margin-inline: auto;
+    }
+
+    .footer-subscribe {
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    footer button,
+    footer .subscribe {
+        width: 100%;
     }
 }

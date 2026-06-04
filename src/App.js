@@ -26,7 +26,7 @@ const imageLinks = [
 const buttonText = [
   {index: 0, text: 'Button 1', className: 'primary'},
   {index: 1, text: 'Button 2', className: 'secondary'},
-  {index: 2, text: 'Button 3', className: 'subscribe'},
+  {index: 2, text: 'Subscribe', className: 'subscribe'},
   {index: 3, text: 'Button 4', className: 'welcome'},
 ]
 
